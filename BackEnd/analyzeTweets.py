@@ -80,3 +80,32 @@ else:
 end = time.time()
 
 print (end - start)
+
+#Analysis of Sentiment and Engagement
+review = indicoio.analyze_text(tweetsList, apis=['sentiment', 'twitter_engagement'])
+#print(b.keys(), b.values())
+
+sentimentArray = np.array(review['sentiment'])
+for i in range(len(sentimentArray)):
+
+    sentimentArray[i] = (sentimentArray[i] - 0.5) * 100
+engagementArray = np.array(review['twitter_engagement'])
+
+productArray = sentimentArray * engagementArray
+print (productArray)
+
+# print (len(productArray))
+
+aggregate_score = 0
+
+for i in productArray:
+    aggregate_score += i - 0.5
+
+if aggregate_score > 0:
+    print("The people feel good about topic.")
+    if aggregate_score > 3:
+        print("The topic has lots of engagement.")
+else:
+    print("The people feel bad about topic.")
+    if aggregate_score > 3:
+        print("The topic has lots of engagement.")
