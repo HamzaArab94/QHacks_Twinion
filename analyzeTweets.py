@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Sat Feb  4 02:57:22 2017
 
-@author: Family
 """
 
 import json
@@ -19,7 +16,7 @@ def word_in_text(word, text):
     return False
     
 def add_field(df, field):
-    df[field] = tweets[field].apply(lambda tweet: word_in_text(field, tweet))
+    df[field] = df[field].apply(lambda tweet: word_in_text(field, tweet))
 
 tweets_data_path = 'facebooktweets.txt'
 
@@ -34,13 +31,21 @@ for line in tweets_file:
     
     
 tweets = pd.DataFrame()
-tweets['text'] = map(lambda tweet: tweet['text'], tweets_data)
-tweets['lang'] = map(lambda tweet: tweet['lang'], tweets_data)
 
+tweets['lang'] = list(map(lambda tweet: tweet['lang'], tweets_data))
+tweets['text'] = list(map(lambda tweet: tweet['text'], tweets_data))
+
+tweets = tweets[tweets.lang == "en"]
 
 #tweets['stock'] = tweets['text'].apply(lambda tweet: word_in_text('stocks', tweet))
 #tweets['trade'] = tweets['text'].apply(lambda tweet: word_in_text('trade', tweet))
-tweets['facebook'] = tweets['text'].apply(lambda tweet: word_in_text('facebook', tweet))
+#tweets['facebook'] = tweets['text'].apply(lambda tweet: word_in_text('facebook', tweet))
+for tweet in tweets['text']:
+    print (tweet)
 
-
+#f = open("facebookTweetsText.txt", "w")
+#for tweet in tweets["text"]:
+ #   f.write("{}\n".format(tweet))
+    
+#f.close()
     
