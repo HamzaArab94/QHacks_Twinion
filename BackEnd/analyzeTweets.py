@@ -52,7 +52,7 @@ def filterTweets(inputFile, keyword):
 #   f.write("{}\n".format(tweet))
 # f.close()
 
-indicoio.config.api_key = '40dc4c756a1582ffe74e549ab29463f2'
+indicoio.config.api_key = 'b920f5f8f2faf5a076b28e18e2203117'
 
 tweetsList = tweets['text'].tolist()
 
