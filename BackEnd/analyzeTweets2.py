@@ -5,6 +5,7 @@ import string
 import numpy as np
 import indicoio
 
+#Check if a word is in a text passage
 def word_in_text(word, text):
     word = word.lower()
     text = text.lower()
@@ -13,6 +14,7 @@ def word_in_text(word, text):
         return True
     return False
 
+#Filter tweets based on a key word
 def filterTweets(inputFile, keyword, numTweets):
     tweets_data = []
     #tweets_file = open(inputFile, "r")
@@ -46,7 +48,7 @@ def filterTweets(inputFile, keyword, numTweets):
 
 # Analysis of Liking/Disliking Topic with Engagement
 #Determine whether the public likes or dislikes the topic
-def SentimentalOutput(tweetsList):
+def sentimentalOutput(tweetsList):
     indicoio.config.api_key = '6d8a020272686a662976e9afdbf98b82'
     
     #Uses indicoio
@@ -65,23 +67,16 @@ def SentimentalOutput(tweetsList):
     for i in productArray:
         productScore += i
     
-    """if productScore < 0:
-        print("People have a negative opinion towards this")
-    elif productScore >= 0:
-        print("People feel okay about this topic")
-    elif productScore > 5:
-        print("The people feel great about topic.")"""
     return productScore
 
 #Analysis of Political Views
 #Determine the tweets with the most leaning political view
-def PoliticalOutput(tweetsList):
+def politicalOutput(tweetsList):
     indicoio.config.api_key = '6d8a020272686a662976e9afdbf98b82'
 
     politics = indicoio.political(tweetsList)
 
     Array = np.array(politics)
-    count = len(Array)
     litar_count = 0
     lib_count = 0
     con_count = 0
@@ -92,22 +87,17 @@ def PoliticalOutput(tweetsList):
         lib_count += di['Liberal']
         con_count += di['Conservative']
         green_count += di['Green']
-    lst = []
-    Libraterians = ((litar_count / count) * 100)
-    lst.append(Libraterians)
-    Liberals = ((lib_count / count) * 100)
-    lst.append(Liberals)
-    Conservatives = ((con_count / count) * 100)
-    lst.append(Conservatives)
-    Greens = ((green_count / count) * 100)
-    lst.append(Greens)
-
-    politicalScore = 0
-    for i in lst:
-        if politicalScore < i:
-            politicalScore = i
-    return politicalScore
-
+        
+    counts = (litar_count, lib_count, con_count, green_count)
+    if (litar_count == max(counts)):
+        return "Libertarian"
+    elif (lib_count == max(counts)):
+        return "Liberal"
+    elif con_count == max(counts):
+        return "Conservative"
+    else:
+        return "Green"
+    
 # Analysis of Personalities
 #Determine most dominating personality relating to the topic
 def PersonalityOutput(tweetsList):
@@ -116,7 +106,6 @@ def PersonalityOutput(tweetsList):
     personality = indicoio.personality(tweetsList)
 
     personalityArray = np.array(personality)
-    personality_count = len(personalityArray)
     openness_count = 0
     cons_count = 0
     extra_count = 0
@@ -127,31 +116,25 @@ def PersonalityOutput(tweetsList):
         cons_count += do['conscientiousness']
         extra_count += do['extraversion']
         agree_count += do['agreeableness']
-    personalitylst = []
-    Openness = ((openness_count / personality_count) * 100)
-    personalitylst.append(Openness)
-    Concientiousness = ((cons_count / personality_count) * 100)
-    personalitylst.append(Concientiousness)
-    Extraversion = ((extra_count / personality_count) * 100)
-    personalitylst.append(Extraversion)
-    Agreeableness = ((agree_count / personality_count) * 100)
-    personalitylst.append(Agreeableness)
-
-    personalityScore = 0
-    for i in personalitylst:
-        if personalityScore < i:
-            personalityScore = i
-    return personalityScore
+        
+    counts = (openness_count, cons_count, extra_count, agree_count)
+    if (openness_count == max(counts)):
+        return "Openness"
+    elif (cons_count == max(counts)):
+        return "Conscientiouesness"
+    elif extra_count == max(counts):
+        return "Extroversion"
+    else:
+        return "Agreeableness"
 
 # Analysis of Emotions
 #Determine most prominent emotion relating to the topic
-def EmotionalOutput(tweetsList):
+def emotionalOutput(tweetsList):
     indicoio.config.api_key = '6d8a020272686a662976e9afdbf98b82'
 
     emotions = indicoio.emotion(tweetsList)
 
     emotionalArray = np.array(emotions)
-    emo_count = len(emotionalArray)
     anger_count = 0
     joy_count = 0
     fear_count = 0
@@ -165,20 +148,15 @@ def EmotionalOutput(tweetsList):
         sad_count += de['sadness']
         surprise_count += de['surprise']
 
-    emotionallst = []
-    Anger = ((anger_count / emo_count) * 100)
-    emotionallst.append(Anger)
-    Joy = ((joy_count / emo_count) * 100)
-    emotionallst.append(Joy)
-    Fear = ((fear_count / emo_count) * 100)
-    emotionallst.append(Fear)
-    Sad = ((sad_count / emo_count) * 100)
-    emotionallst.append(Sad)
-    Surprise = ((surprise_count / emo_count) * 100)
-    emotionallst.append(Surprise)
+    counts = (anger_count, joy_count, fear_count, sad_count, surprise_count)
     
-    emotionalScore = 0
-    for i in emotionallst:
-        if emotionalScore < i:
-            emotionalScore = i
-    return emotionalScore
+    if (anger_count == max(counts)):
+        return "Anger"
+    elif (joy_count == max(counts)):
+        return "Joy"
+    elif fear_count == max(counts):
+        return "Fear"
+    elif sad_count == max(counts):
+        return "Sadness"
+    else:
+        return "Shock"
