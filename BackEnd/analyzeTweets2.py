@@ -5,8 +5,6 @@ import string
 import numpy as np
 import indicoio
 
-
-
 def word_in_text(word, text):
     word = word.lower()
     text = text.lower()
@@ -19,8 +17,7 @@ def filterTweets(inputFile, keyword, numTweets):
     tweets_data = []
     #tweets_file = open(inputFile, "r")
     with open(inputFile) as f:
-        tweets_data = json.load(f)
-        
+        tweets_data = json.load(f)     
     
     #tweets_data = [tweet for tweet in tweets_data if 'lang' in tweet]
     tweets = pd.DataFrame()
@@ -46,7 +43,6 @@ def filterTweets(inputFile, keyword, numTweets):
         tweet = ''.join(filter(lambda x: x in string.printable, tweet))
     
     return result
-
 
 # Analysis of Liking/Disliking Topic with Engagement
 #Determine whether the public likes or dislikes the topic
