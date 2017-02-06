@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_46d43d8f534808a25e23d31b1aa2712368bdc6e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_8a645677d2a19eddbbae9eb2a1cb92eef7365733/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_9bfce477d5b05df03b90888101adde3abb8db039/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_aeb21cc033fd833676167b2e74b5fc976cf08f9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_bf31874d0c27d733abfebba76894a5db8935819a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da13c313276bdf2b10098df68502905efbece705">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f5adc4812b636f46dfdf3a2792795c66bed3f12c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_e9fe00f92368accfdb9b2f70ba5d723c37e20ab3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_97515393f309e2aca66063db4974c46695f61f67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.2.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c146e86134622a0158c563953c4f5656587bff96">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/pl.droidsonroids.gif-android-gif-drawable-1.2.4_aed1cfffb17a18fbad22f3fa1a50af3df52ad733/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.1_55a140c4679d22a933e41e9e8cb2d47b71597faf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_4c868b20833bb079367749f61db0429f4d8db4e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ff1349abe94f37ab74dad131228416155982a106">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_49ed3343ecf568ec71a88d522a53576c4e4b34e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_3197abb689aa10162aaf917aebe96332eb8661e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_ae2048b03892cf50a7e45bb4f7880ee8394755d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_88e64d12ac1042c5a917751d853ab10736ba25b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/erikkoning/AndroidStudioProjects/TwitterMine/TwitMine/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_840b05c46b2eea3ce4bdf77d3053aed0dfb6902f/classes.dex" />
+    </item>
+
+</items>
